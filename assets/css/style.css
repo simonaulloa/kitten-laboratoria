@@ -1,1 +1,31 @@
-style.css
+body{
+	background-image: url(../../assets/img/landscape.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;  /*altura minima del body va a ser la atura del visor del navegador*/
+}
+picture{
+	display: block;
+    margin: auto;
+}
+@media (max-width: 599px){
+	container{
+		width: 100%
+	}
+	body{
+		background-image: url('../img/maxresdefault.jpg');
+	}
+}
+
+@media (min-width: 600px) and (max-width: 950px){
+	container{
+		width: 100%
+	}
+	body{
+		background-image: url(../../assets/img/dawn.png);
+}
